@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #faf8f5;
+    font-family: 'Montserrat', sans-serif;
+    color: #2d2621;
+}
+
+/* HEADER & NAVEGACIÓN */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 80px;
+    background-color: #faf8f5;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #2d2621;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #8c827a;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav a:hover,
+.nav a.active {
+    color: #c5a059;
+}
+
+.btn-ingresar {
+    text-decoration: none;
+    padding: 9px 24px;
+    border: 1px solid #2d2621;
+    border-radius: 30px;
+    color: #2d2621;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.25s ease;
+}
+
+.btn-ingresar:hover {
+    background-color: #2d2621;
+    color: #ffffff;
+}
+
+/* MAIN CONTAINER */
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* FILTROS DE CATEGORÍA */
+.filtros {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 30px 0 30px 0;
+    padding: 0 20px;
+}
+
+.btn-filtro {
+    padding: 9px 22px;
+    background-color: #ffffff;
+    border: 1px solid #eae4dc;
+    border-radius: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #8c827a;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.btn-filtro:hover,
+.btn-filtro.active {
+    background-color: #2d2621;
+    color: #ffffff;
+    border-color: #2d2621;
+}
+
+/* GRILLA Y TARJETAS DE PRODUCTOS */
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 20px 20px 80px 20px;
+}
+
+.card-producto {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.02);
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-producto:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+}
+
+.contenedor-imagen {
+    width: 100%;
+    height: 200px;
+    background-color: #f4efe6;
+    border-radius: 14px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.placeholder-img {
+    color: #a89f91;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.info-producto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.categoria-tag {
+    font-size: 10px;
+    font-weight: 600;
+    color: #c5a059;
+    letter-spacing: 1.5px;
+    margin-top: 18px;
+    display: block;
+}
+
+.titulo-producto {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #2d2621;
+    margin: 6px 0;
+}
+
+.precio-producto {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2d2621;
+    margin-bottom: 18px;
+}
+
+.btn-add-cart {
+    width: 100%;
+    padding: 12px;
+    background-color: transparent;
+    border: 1px solid #2d2621;
+    border-radius: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #2d2621;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.btn-add-cart:hover {
+    background-color: #2d2621;
+    color: #ffffff;
+}/* HEADER Y NAVEGACIÓN */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 80px;
+    background-color: #faf8f5;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #2d2621;
+}
+
+.nav {
+    display: flex;
+    gap: 32px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #8c827a;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav a:hover,
+.nav a.active {
+    color: #c5a059;
+}
+
+.btn-ingresar {
+    text-decoration: none;
+    padding: 10px 26px;
+    border: 1px solid #2d2621;
+    border-radius: 30px;
+    color: #2d2621;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.25s ease;
+}
+
+.btn-ingresar:hover {
+    background-color: #2d2621;
+    color: #ffffff;
+}

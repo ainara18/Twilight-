@@ -1,0 +1,103 @@
+/* Generales */
+body {
+  font-family: "Space Grotesk", "Noto Sans", sans-serif;
+  background-color: #f1f5f9;
+}
+
+.bg-slate-50 {
+  background-color: #f8fafc;
+}
+
+/* Header */
+header {
+  border-bottom: 1px solid #e7edf3;
+}
+
+header .logo svg {
+  width: 48px;
+  height: 48px;
+}
+
+header .logo h2 {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+header .nav-links a {
+  margin-right: 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+header .search-box input {
+  border-radius: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+button.bg-{
+  background-color: #e7edf3;
+}
+
+/* Portada */
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("URL_IMAGEN");
+  background-size: cover;
+  background-position: center;
+  min-height: 480px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.hero h1 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: white;
+}
+
+.hero h2 {
+  font-size: 0.875rem;
+  color: white;
+}
+
+/* Auto Section */
+.auto-card {
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 16/9;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.auto-card:hover {
+  transform: scale(1.05);
+}
+
+.auto-card .auto-info {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+}
+
+.auto-info h3, .auto-info p {
+  color: white;
+  font-size: 1rem;
+}
+
+/* Buttons */
+button.view-all, button.search {
+  background-color: #1978e5;
+  color: white;
+  font-weight: bold;
+}
+
+button.view-all {
+  width: 100%;
+  padding: 12px;
+}

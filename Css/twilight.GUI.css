@@ -1,0 +1,228 @@
+/* Reseteo General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-primary: #FAF8F5;
+    --text-color: #2C2C2C;
+    --accent-color: #D4AF37; /* Dorado tenue */
+    --accent-hover: #B89628;
+    --card-bg: #FFFFFF;
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Montserrat', sans-serif;
+    --danger-color: #E74C3C;
+    --danger-hover: #C0392B;
+}
+
+body {
+    background-color: var(--bg-primary);
+    background: linear-gradient(135deg, #fce4ec 0%, #f3e5f5 50%, #e8eaf6 100%);
+    font-family: var(--font-body);
+    min-height: 100vh;
+    padding: 3rem 1.5rem;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Contenedor Principal Centrado */
+.container {
+    width: 100%;
+    max-width: 750px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Título Principal */
+.container h1 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #1a1a1a;
+    text-align: center;
+}
+
+/* Subtítulo del listado */
+.list-container h2 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 1.2rem;
+}
+
+/* --- TARJETA DEL FORMULARIO --- */
+.form-container {
+    background-color: var(--card-bg);
+    padding: 2.5rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.form-container label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 0.4rem;
+    text-transform: capitalize;
+}
+
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container select,
+.form-container input[type="file"] {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    background-color: #fcfcfc;
+    transition: all 0.3s ease;
+    outline: none;
+    margin-bottom: 1.2rem;
+}
+
+.form-container input:focus,
+.form-container select:focus {
+    border-color: var(--accent-color);
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.15);
+}
+
+/* Botón Guardar / Actualizar */
+.form-container button[type="submit"] {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.form-container button[type="submit"]:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+.btn-cancelar {
+    display: block;
+    text-align: center;
+    margin-top: 0.8rem;
+    color: #777;
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+
+.btn-cancelar:hover {
+    color: var(--text-color);
+}
+
+/* --- TARJETA Y TABLA DE LISTADO --- */
+.list-container {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    overflow: hidden;
+    border: none !important;
+}
+
+th, td {
+    padding: 0.9rem 1.2rem;
+    text-align: left;
+    font-size: 0.88rem;
+}
+
+th {
+    background-color: #f8f6f2;
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+td {
+    border-bottom: 1px solid #f0f0f0;
+    color: #444;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:hover td {
+    background-color: #fdfbf7;
+}
+
+/* Botones de Acciones en la Tabla */
+.btn-accion {
+    padding: 0.4rem 0.82rem;
+    border-radius: 6px;
+    font-family: var(--font-body);
+    font-size: 0.78rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background-color: transparent;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-editar {
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    margin-right: 0.3rem;
+}
+
+.btn-editar:hover {
+    background-color: var(--text-color);
+    color: #ffffff;
+}
+
+.btn-eliminar {
+    border: 1px solid var(--danger-color);
+    color: var(--danger-color);
+}
+
+.btn-eliminar:hover {
+    background-color: var(--danger-color);
+    color: #ffffff;
+}
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container select,
+.form-container textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+    outline: none;
+    resize: vertical; /* Permite redimensionar solo hacia abajo */
+}
